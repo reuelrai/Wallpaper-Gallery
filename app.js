@@ -18,7 +18,7 @@ const name = ["Aayush Giri", "Avishek Sigel", "Bipin Dawadi", "Mandip Shrestha",
 
 // Populate the dropdown dynamically
 const voteSelec = document.getElementById('name');
-names.forEach(name => {
+name.forEach(name => {
     const option = document.createElement('option');
     option.value = name;
     option.textContent = name;
