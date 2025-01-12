@@ -37,10 +37,7 @@ body {
     color: rgb(210, 21, 0);
 }
 
-.info {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 
 .info {
     background: rgba(255, 255, 255, 0.2);
@@ -53,6 +50,8 @@ body {
     margin: 20px auto;
     color: rgb(255, 25, 0);
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .info h1 {
@@ -92,4 +91,23 @@ body {
 
 .info button:hover {
     background: rgb(255, 77, 57);
+}
+
+.info .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .form-row label {
+    flex: 1;
+    margin-right: 5px;
+    padding-bottom: 10px;
+    font-weight: 600;
+
+}
+
+.info .form-row select {
+    flex: 3;
 }
