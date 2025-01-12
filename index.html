@@ -12,16 +12,18 @@
     <div class="info">
         <form id="voteForm">
             <h1>Vote Your Favourite Wallpaper</h1>
-            <label for="name">Your Name:</label>
-            <select id="name" name="name" required>
-                <option value="">Select a person:</option>
-            </select>
-            
-            <label for="vote">Vote to:</label>
-            <select id="vote" name="vote" required>
-                <option value="">Select a person:</option>
-            </select>
-    
+            <div class="form-row">
+                <label for="name">Your Name:</label>
+                <select id="name" name="name" required>
+                    <option value="">Select a person:</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="vote">Vote To:</label>
+                <select id="vote" name="vote" required>
+                    <option value="">Select a person:</option>
+                </select>
+            </div>
             <button type="submit">Submit Vote</button>
         </form>
     </div>
