@@ -4,154 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallpaper Gallery</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <link href="styles.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/favi.jpg">
 </head>
 <body>
     <div class="info">
-        <h1>Choose Your Favorite Wallpaper</h1>
-        <p>Vote through the link below.</p>
-        <a href="https://reuelrai.github.io/vote/" target="_blank" style="color: purple; font-weight: bold;">Vote Here</a>
+        <form id="voteForm">
+            <h1>Vote Your Favourite Wallpaper</h1>
+            <label for="name">Your Name:</label>
+            <select id="name" name="name" required>
+                <option value="">Select a person:</option>
+            </select>
+            
+            <label for="vote">Vote:</label>
+            <select id="vote" name="vote" required>
+                <option value="">Select a person:</option>
+            </select>
+    
+            <button type="submit">Submit Vote</button>
+        </form>
     </div>
+    
     <div class="gallery">
         <div class="gallery-item">
-            <a href="image1.jpg" target="_blank">
-                <img src="image1.jpg" alt="Image 1">
+            <a href="/assests/Aayush.jpg" target="_blank">
+                <img src="/assests/Aayush.jpg" alt="Aayush Giri">
             </a>
-            <p>Image 1</p>
+            <p>Aayush Giri</p>
         </div>
         <div class="gallery-item">
-            <a href="image2.png" target="_blank">
-                <img src="image2.png" alt="Image 2">
+            <a href="/assests/Avishek.png" target="_blank">
+                <img src="/assests/Avishek.png" alt="Avishek Sigdel">
             </a>
-            <p>Image 2</p>
+            <p>Avishek Sigdel</p>
         </div>
         <div class="gallery-item">
-            <a href="image3.jpg" target="_blank">
-                <img src="image3.jpg" alt="Image 3">
+            <a href="/assests/Bipin.jpg" target="_blank">
+                <img src="/assests/Bipin.jpg" alt="Bipin Dawadi">
             </a>
-            <p>Image 3</p>
+            <p>Bipin Dawadi</p>
         </div>
         <div class="gallery-item">
-            <a href="image4.jpeg" target="_blank">
-                <img src="image4.jpeg" alt="Image 4">
+            <a href="/assests/Harish.jpg" target="_blank">
+                <img src="/assests/Harish.jpg" alt="Harish Chaisir">
             </a>
-            <p>Image 4</p>
+            <p>Harish Chaisir</p>
         </div>
         <div class="gallery-item">
-            <a href="image5.jpg" target="_blank">
-                <img src="image5.jpg" alt="Image 5">
+            <a href="/assests/Mandip.jpg" target="_blank">
+                <img src="/assests/Mandip.jpg" alt="Mandip Shrestha">
             </a>
-            <p>Image 5</p>
+            <p>Mandip Shrestha</p>
         </div>
         <div class="gallery-item">
-            <a href="image6.jpg" target="_blank">
-                <img src="image6.jpg" alt="Image 6">
+            <a href="/assests/Manjil.jpg" target="_blank">
+                <img src="/assests/Manjil.jpg" alt="Manjil Aryal">
             </a>
-            <p>Image 6</p>
+            <p>Manjil Aryal</p>
         </div>
         <div class="gallery-item">
-            <a href="image7.jpg" target="_blank">
-                <img src="image7.jpg" alt="Image 7">
+            <a href="/assests/Muskan.jpg" target="_blank">
+                <img src="/assests/Muskan.jpg" alt="Muskan Rajbanshi">
             </a>
-            <p>Image 7</p>
+            <p>Muskan Rajbanshi</p>
         </div>
         <div class="gallery-item">
-            <a href="image8.jpg" target="_blank">
-                <img src="image8.jpg" alt="Image 8">
+            <a href="/assests/Nikita.jpeg" target="_blank">
+                <img src="/assests/Nikita.jpeg" alt="Nikita Chaudary">
             </a>
-            <p>Image 8</p>
+            <p>Nikita Chaudary</p>
         </div>
         <div class="gallery-item">
-            <a href="image9.jpg" target="_blank">
-                <img src="image9.jpg" alt="Image 9">
+            <a href="/assests/Reuel.jpg" target="_blank">
+                <img src="/assests/Reuel.jpg" alt="Reuel Rai">
             </a>
-            <p>Image 9</p>
+            <p>Reuel Rai</p>
         </div>
         <div class="gallery-item">
-            <a href="image10.jpg" target="_blank">
-                <img src="image10.jpg" alt="Image 10">
+            <a href="/assests/Robana.jpg" target="_blank">
+                <img src="/assests/Robana.jpg" alt="Robana Kumari Shrestha">
             </a>
-            <p>Image 10</p>
+            <p>Robana Kumari Shrestha</p>
         </div>
         <div class="gallery-item">
-            <a href="image11.jpg" target="_blank">
-                <img src="image11.jpg" alt="Image 11">
+            <a href="/assests/Samyog.png" target="_blank">
+                <img src="/assests/Samyog.png" alt="Samyog Sapkota">
             </a>
-            <p>Image 11</p>
+            <p>Samyog Sapkota</p>
         </div>
         <div class="gallery-item">
-            <a href="image12.jpg" target="_blank">
-                <img src="image12.jpg" alt="Image 12">
+            <a href="/assests/Shristi.jpeg" target="_blank">
+                <img src="/assests/Shristi.jpeg" alt="Shristi Budha Magar">
             </a>
-            <p>Image 12</p>
+            <p>Shristi Budha Magar</p>
         </div>
         <div class="gallery-item">
-            <a href="image13.jpg" target="_blank">
-                <img src="image13.jpg" alt="Image 13">
+            <a href="/assests/Sudip.jpg" target="_blank">
+                <img src="/assests/Sudip.jpg" alt="Sudip Bhandari">
             </a>
-            <p>Image 13</p>
+            <p>Sudip Bhandari</p>
         </div>
-        <div class="gallery-item">
-            <a href="image14.jpg" target="_blank">
-                <img src="image14.jpg" alt="Image 14">
-            </a>
-            <p>Image 14</p>
-        </div>
-        <div class="gallery-item">
-            <a href="image15.jpg" target="_blank">
-                <img src="image15.jpg" alt="Image 15">
-            </a>
-            <p>Image 15</p>
-        </div>
-        <div class="gallery-item">
-            <a href="image16.jpg" target="_blank">
-                <img src="image16.jpg" alt="Image 16">
-            </a>
-            <p>Image 16</p>
-        </div>
-        <div class="gallery-item">
-            <a href="image17.jpg" target="_blank">
-                <img src="image17.jpg" alt="Image 17">
-            </a>
-            <p>Image 17</p>
-        </div>
-        <div class="gallery-item">
-            <a href="image18.jpg" target="_blank">
-                <img src="image18.jpg" alt="Image 18">
-            </a>
-            <p>Image 18</p>
-        </div>
-        <div class="gallery-item">
-            <a href="image19.jpg" target="_blank">
-                <img src="image19.jpg" alt="Image 19">
-            </a>
-            <p>Image 19</p>
-        </div>
-        <div class="gallery-item">
-            <a href="image20.jpg" target="_blank">
-                <img src="image20.jpg" alt="Image 20">
-            </a>
-            <p>Image 20</p>
-        </div>
-        <div class="gallery-item">
-            <a href="image21.jpg" target="_blank">
-                <img src="image21.jpg" alt="Image 21">
-            </a>
-            <p>Image 21</p>
-        </div>
-        <div class="gallery-item">
-            <a href="image22.jpg" target="_blank">
-                <img src="image22.jpg" alt="Image 22">
-            </a>
-            <p>Image 22</p>
-        </div>
-        <div class="gallery-item">
-            <a href="image23.jpg" target="_blank">
-                <img src="image23.jpg" alt="Image 23">
-            </a>
-            <p>Image 23</p>
-        </div>
+        
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
