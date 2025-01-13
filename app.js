@@ -14,7 +14,7 @@ name.forEach(name => {
     voteSelec.appendChild(option);
 });
 // Predefined list of names
-const names = ["Aayush Giri", "Avishek Sigel", "Bipin Dawadi", "Mandip Shrestha", "Muskan Rajbanshi", "Nikita Chaudhary", "Reuel Rai", "Samyog Sapkota", "Shristi Budha Magar", "Sudip Bhandari", "Umang Magar", "Harish Chaisir", "Manjil Aryal", "Robana Kumari Shrestha", "Samipya Acharya", "Sandeep Lamichhane"];
+const names = ["Aayush Giri", "Avishek Sigel", "Bipin Dawadi", "Mandip Shrestha", "Muskan Rajbanshi", "Nikita Chaudhary", "Reuel Rai", "Samyog Sapkota", "Shristi Budha Magar", "Sudip Bhandari", "Harish Chaisir", "Manjil Aryal", "Robana Kumari Shrestha", "Samipya Acharya", "Sandeep Lamichhane"];
 // Populate the dropdown dynamically
 const voteSelect = document.getElementById('vote');
 names.forEach(name => {
