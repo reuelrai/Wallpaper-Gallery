@@ -9,7 +9,6 @@ body {
     color: #fff;
     text-align: center;
     margin: 0;
-    padding: 0;
 }
 
 .gallery {
@@ -17,7 +16,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     max-width: 90%;
-    margin: 0 auto;
 }
 
 .gallery-item {
@@ -26,7 +24,6 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    text-align: center;
 }
 
 .gallery img {
@@ -34,7 +31,6 @@ body {
     height: auto;
     border-radius: 8px;
     cursor: pointer;
-    max-width: 100%;
 }
 
 .gallery p {
@@ -129,7 +125,6 @@ body {
 
     .gallery-item {
         padding: 5px;
-        text-align: center;
     }
 
     .gallery p {
@@ -171,32 +166,26 @@ body {
     }
 }
 
-#reuel-gallery-item {
-    height: auto; /* Adjust to content */
+#reuel-gallery-item{
+    height: 72%;
+}
+#bipin-gallery-item{
+    height: 33%;
 }
 
-#bipin-gallery-item {
-    height: auto; /* Adjust to content */
+#mandip-gallery-item{
+    height: 60%;
 }
 
-#mandip-gallery-item {
-    height: auto; /* Adjust to content */
+#muskan-gallery-item{
+    height: 80%;
 }
 
-#muskan-gallery-item {
-    height: auto; /* Adjust to content */
+#samyog-gallery-item{
+    height: 27%;
 }
 
-#samyog-gallery-item {
-    height: auto; /* Adjust to content */
+#shristi-gallery-item{
+    height: 80%;
 }
 
-#shristi-gallery-item {
-    height: auto; /* Adjust to content */
-}
-
-/* Ensure images take appropriate space and don't distort */
-.gallery-item img {
-    width: 100%;
-    height: auto;
-}
