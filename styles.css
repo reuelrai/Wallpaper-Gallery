@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
@@ -7,16 +8,16 @@ body {
     flex-direction: column;
     color: #fff;
     text-align: center;
-    top: 0;
-    right: 0;
     margin: 0;
 }
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     max-width: 90%;
 }
+
 .gallery-item {
     background: rgba(255, 255, 255, 0.1);
     padding: 10px;
@@ -24,20 +25,20 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
 }
+
 .gallery img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     cursor: pointer;
 }
+
 .gallery p {
     margin: 10px 0 0;
     font-weight: 600;
     font-size: large;
     color: rgb(210, 21, 0);
 }
-
-
 
 .info {
     background: rgba(255, 255, 255, 0.2);
@@ -105,9 +106,86 @@ body {
     margin-right: 5px;
     padding-bottom: 10px;
     font-weight: 600;
-
 }
 
 .info .form-row select {
     flex: 3;
 }
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info {
+        max-width: 90%;
+        margin: 20px;
+    }
+
+    .gallery-item {
+        padding: 5px;
+    }
+
+    .gallery p {
+        font-size: medium;
+    }
+
+    .info h1 {
+        font-size: 22px;
+    }
+
+    .info label,
+    .info select,
+    .info button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        padding: 15px;
+    }
+
+    .info h1 {
+        font-size: 20px;
+    }
+
+    .info label,
+    .info select,
+    .info button {
+        font-size: 12px;
+    }
+
+    .gallery-item {
+        padding: 8px;
+    }
+}
+
+#reuel-gallery-item{
+    height: 72%;
+}
+#bipin-gallery-item{
+    height: 33%;
+}
+
+#mandip-gallery-item{
+    height: 60%;
+}
+
+#muskan-gallery-item{
+    height: 80%;
+}
+
+#samyog-gallery-item{
+    height: 27%;
+}
+
+#shristi-gallery-item{
+    height: 80%;
+}
+
